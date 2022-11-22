@@ -74,7 +74,7 @@ pen.color("white")
 pen.penup()
 pen.hideturtle()
 pen.goto(0, titleheight)
-pen.write("Score: 0  High Score: 0", align="center", font=("Eurofighter", 24, "normal"))
+pen.write("Score: 0  High Score: 0", align="center", font=("Minecraft", 24, "normal"))
 
 # Functions
 def go_up():
@@ -140,7 +140,7 @@ while True:
         delay = 0.1
 
         pen.clear()
-        pen.write("Score: {}  High Score: {}".format(score, high_score), align="center", font=("Eurofighter", 24, "normal"))
+        pen.write("Score: {}  High Score: {}".format(score, high_score), align="center", font=("Minecraft", 24, "normal"))
         # Update high score
         HighScore = open("High.Score", "wb")
         pickle.dump(high_score,HighScore)
@@ -170,7 +170,7 @@ while True:
         if score > high_score:
             high_score = score
         pen.clear()
-        pen.write("Score: {}  High Score: {}".format(score, high_score), align="center", font=("Eurofighter", 24, "normal"))
+        pen.write("Score: {}  High Score: {}".format(score, high_score), align="center", font=("Minecraft", 24, "normal"))
 
     # Move the end segments first in reverse order
     for index in range(len(segments)-1, 0, -1):
@@ -208,7 +208,7 @@ while True:
 
             # Update the score display
             pen.clear()
-            pen.write("Score: {}  High Score: {}".format(score, high_score), align="center", font=("Eurofighter", 24, "normal"))
+            pen.write("Score: {}  High Score: {}".format(score, high_score), align="center", font=("Minecraft", 24, "normal"))
 
             # Update high score
             HighScore = open("High.score","wb")
